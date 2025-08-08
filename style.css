@@ -1,0 +1,45 @@
+body {
+  overflow-x: hidden;
+}
+
+#text {
+  font-size: 2rem;
+  border: 3px solid skyblue;
+}
+
+
+#text:hover {
+  border-color: darkturquoise;
+  box-shadow: 0 0 10px darkturquoise;
+}
+
+#text:active {
+  border-color: cyan;
+  box-shadow: 0 0 15px cyan;
+}
+
+#Number,
+#count {
+  font-size: 2rem;
+  color:Red;
+  background-color: orangered;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Airtime page enhancements */
+#airtimeForm {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+#tempCardList li,
+#storedCardList li {
+  font-weight: 500;
+}
+
+#pushToLocal {
+  width: 100%;
+}

@@ -1,0 +1,93 @@
+/* Reset + Base */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Dark mode support */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.card {
+  animation: slideUp 0.5s ease-in-out;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+/* Inputs */
+input:valid, textarea:valid, select:valid {
+  border: 2px solid green;
+}
+
+input:invalid, textarea:invalid, select:invalid {
+  border: 2px solid red;
+}
+
+/* Password icon hover */
+.toggle-password:hover {
+  background-color: #eee;
+}
+
+/* Blog post style */
+#blogList .bg-light {
+  transition: transform 0.3s;
+}
+#blogList .bg-light:hover {
+  transform: translateY(-5px);
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .card {
+    padding: 2rem 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  h2, h3, h4 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .input-group-text {
+    font-size: 0.9rem;
+  }
+
+  .form-check-label {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Light/Dark mode switch position */
+.form-check.form-switch {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
