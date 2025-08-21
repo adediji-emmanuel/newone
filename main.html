@@ -23,6 +23,7 @@
         <a href="contact.html" class="btn btn-secondary"><i class="bi bi-envelope"></i> Contact</a>
         <a href="blog.html" class="btn btn-success"><i class="bi bi-journal-text"></i> Blog</a>
         <a href="admin.html" class="btn btn-warning d-none" id="adminBtn"><i class="bi bi-gear"></i> Admin</a>
+        <a href="airtime.html" class="btn btn-warning d-none" id="airtimeBtn"><i class="bi bi-airtime"></i> Airtime</a>
         <button class="btn btn-danger" onclick="logout()"><i class="bi bi-box-arrow-right"></i> Logout</button>
       </div>
     </div>
@@ -93,6 +94,7 @@
 
       if (currentUser.role === 'admin') {
         document.getElementById('adminBtn').classList.remove('d-none');
+        document.getElementById('airtimeBtn').classList.remove('d-none');
       }
     }
 
